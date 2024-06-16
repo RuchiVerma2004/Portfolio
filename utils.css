@@ -1,7 +1,14 @@
+:root{
+  --primary-color:  #E2E8F0;   /* Light Blue */
+  --secondary-color: #94A3B8;
+  --tertiary-color: #59ddd5;/* Light Gray */
+  --quaternary-color: #9ff2ec17
+}
 *{
     font-family: "Roboto", sans-serif;
     font-style: normal;
     line-height: 1.5;
+    /* text-align: justify; */
     /* font-weight: 400; */
 }
 .flex-column{
@@ -11,6 +18,10 @@
 .flex-row{
     display: flex;
     flex-direction: row;
+}
+
+.row-wrap{
+  flex-wrap: wrap;
 }
 
 .roboto-thin {
@@ -108,4 +119,15 @@
   .mb-16{
     
     margin-bottom: 1rem;
+  }
+
+  img{
+    width: 25%;
+    height: 30%;
+    border: 2px ;
+
+  }
+
+  .skills{
+
   }

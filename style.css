@@ -1,3 +1,9 @@
+:root{
+    --primary-color:  #E2E8F0;   /* Light Blue */
+    --secondary-color: #94A3B8;
+    --tertiary-color: #59ddd5;/* Light Gray */
+    --quaternary-color: #9ff2ec17;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +11,8 @@
     font-family: Roboto;
 }
 body{
-    background-color: rgb(15 23 42);
-    
+    background-color: #0f172a;
+    overflow: hidden;
 }
 #container{
     position:relative;
@@ -14,21 +20,25 @@ body{
     flex-wrap: wrap;
     margin: auto;
     width:91%;
+    /* height: 100vh;  */
     justify-content: space-between;
-    padding: 96px;
+    padding: 0px 96px;
 }
 .right{
    width: 45%;
     height:100vh;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .left{
    
-    /* position:fixed;
+    position:sticky;
     top:0px;
-    bottom:0px;
-    left:0px;*/
+    /* left: 0px; */
+    padding: 96px 0px;
     width: 45%;
-    height:100vh; 
+    max-height:100vh; 
 }
 
 h1{
@@ -42,7 +52,7 @@ h2{
     margin-top: 12px;
 }
 
-.about{
+.mini_about{
     margin-top: 16px;
 }
 
@@ -61,4 +71,49 @@ nav{
 
 .navigator:hover{
     color: #E2E8F0;
+}
+.experience{
+    padding-top: 96px;
+}
+.about{
+    padding-top: 96px;
+}
+.projects{
+    padding-top: 96px;
+}
+
+.project{
+    padding: 1rem ;
+    margin: .5rem 0rem;
+    transition: all .5s ease;
+    justify-content: space-between;
+}
+.about-project{
+    width: 70%;
+}
+.project:hover{
+    background-color: #172748;
+    border-radius: 5px;;
+}
+.tech{
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: 1.5rem ;
+}
+
+.project_heading{
+    text-decoration: none;
+    color:var(--primary-color)
+}
+
+.project:hover .project_heading{
+    color:var(--tertiary-color);
+}
+
+.project:hover img{
+    border: 2px solid #17274819;
+    border-radius: 5px 10px;
+    box-shadow: 0px 0px 1px ;
 }
