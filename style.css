@@ -117,3 +117,7 @@ nav{
     border-radius: 5px 10px;
     box-shadow: 0px 0px 1px ;
 }
+
+.navigator:hover hr{
+    width: 3.5rem;
+}

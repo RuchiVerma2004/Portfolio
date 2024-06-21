@@ -128,6 +128,18 @@
 
   }
 
-  .skills{
-
+  hr{
+    display: inline-block;
+    width: 2rem;
+    position: relative;
+    bottom: 5px;
+    margin-right: 1rem;
+    height:2px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    transition: all ease .5s;
+  }
+  .focus{
+    color:var(--primary-color);
+    
   }
